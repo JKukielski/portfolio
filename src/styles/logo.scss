@@ -4,13 +4,13 @@
     font-family: $secondaryFont;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex;
     padding: 10px;
     width: 300px;
 
     .logo-image {
         font-size: 42px;
-        color: $primaryLightColor;
+        color: $primaryDarkColor;
         margin-right: 8px;
     }
 
@@ -23,11 +23,39 @@
         padding-top: 8px;
 
         .logo-name {
-            color: $primaryLightColor;
+            color: $primaryDarkColor;
         }
     
         .logo-title {
             color: #9d4edd;
+        }
+
+    }
+}
+
+#light .logo {
+
+    .logo-image {
+        color: $primaryDarkColor;
+    }
+
+    .logo-text-container {
+        .logo-name {
+            color: $primaryDarkColor;
+        }
+    
+    }
+}
+
+#dark .logo {
+
+    .logo-image {
+        color: $primaryLightColor;
+    }
+
+    .logo-text-container {
+        .logo-name {
+            color: $primaryLightColor;
         }
 
     }

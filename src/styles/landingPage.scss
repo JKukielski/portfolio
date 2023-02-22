@@ -1,1 +1,51 @@
 @import '../index';
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: $secondaryFont;
+}
+
+
+.landing-page-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.landing-page-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .landing-page-menu-element {
+        margin: 0 40px;
+    }
+
+    p .landing-page-menu-link {
+        text-decoration: none;
+        color: $primaryDarkColor;
+    }
+
+    
+}
+
+.landing-page-hero {
+
+}
+
+#light .landing-page-menu {
+
+    p .landing-page-menu-link {
+        color: $primaryDarkColor;
+    }
+}
+
+#dark .landing-page-menu {
+
+    p .landing-page-menu-link {
+        color: $primaryLightColor;
+    }
+}
