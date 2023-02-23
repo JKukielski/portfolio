@@ -53,4 +53,12 @@
 
 .switch-icon {
   margin-right: 5px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 339px) {
+  .slider {
+    width: 55px;
+    height: 25px;
+  }
 }

@@ -54,3 +54,28 @@
     transition: ease-out 0.5s;
 }
 }
+
+
+@media screen and (max-width: 339px) {
+
+    .menu-icon {
+        height: 16px;
+
+        .menu-icon-bar {
+            height: 3px;
+            width: 26px;
+            border-radius: 3px;
+        }
+    }
+
+        
+    .menu-icon-bar.clicked:nth-child(1) {
+        transform: rotate(45deg) translate(0.1em, 0.65em);
+    }
+
+
+    .menu-icon-bar.clicked:nth-child(3) {
+        transform: rotate(135deg) translate(0.1em, 0.45em);
+    }
+
+}
