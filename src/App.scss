@@ -14,3 +14,19 @@
 #dark * {
     background-color: $primaryDarkColor;
 }
+
+.section-padding {
+    padding: 10px 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-padding {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section-padding {
+        padding: 10px 10px;
+    }
+}

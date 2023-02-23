@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 .checkbox {
     display: none;
   }
@@ -34,9 +36,21 @@
   }
   
  #dark .checkbox:checked ~ .slider {
-    background-color: #9d4edd;
+    background-color: $complementColor;
   }
   
   .checkbox:active ~ .slider::before {
     transform: translate(0);
   }
+
+
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.switch-icon {
+  margin-right: 5px;
+}

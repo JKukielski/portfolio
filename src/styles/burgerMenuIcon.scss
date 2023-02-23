@@ -1,18 +1,56 @@
 @import '../index.scss';
 
 .menu-icon {
-
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     height: 20px;
     cursor: pointer;
+    position: relative;
+    z-index: 999;
 
     .menu-icon-bar {
         height: 3px;
-        width: 20px;
+        width: 30px;
         border-radius: 3px;
-        background-color: $primaryLightColor;
     }
+}
+
+
+#light .menu-icon-bar {
+    background-color: $primaryDarkColor;
+}
+
+#dark .menu-icon-bar {
+    background-color: $primaryLightColor;
+}
+
+@media screen and (max-width: 972px) {
+    .menu-icon {
+        display: flex;
+        margin-left: 15px;
+    }
+
+    
+.menu-icon-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(0.1em, 0.65em);
+    transition: ease-out 0.5s;
+}
+
+
+.menu-icon-bar.clicked:nth-child(2) {
+    transform: scale(0);
+    transition: ease-out 0.5s;
+}
+
+.menu-icon-bar.clicked:nth-child(3) {
+    transform: rotate(135deg) translate(-0.1em, 0.65em);
+    transition: ease-out 0.5s;
+}
+
+.menu-icon-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: ease-out 0.5s;
+}
 }
