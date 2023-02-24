@@ -18,8 +18,6 @@ const LandingPageNavbar = ({ theme, toggleTheme }) => {
       setMenuClass("smallscreen-menu hidden");
     }
     setToggleMenu(!toggleMenu);
-
-    console.log(menuClass);
   };
 
   return (
